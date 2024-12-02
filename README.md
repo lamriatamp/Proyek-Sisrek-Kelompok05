@@ -1,23 +1,23 @@
-# Movie Recommendation Engine using Collaborative Filtering
+Kelompok mahasiswa presentasi hasil penerapan model CF dan CBF untuk sistem rekomendasi Pariwisata Toba.
 
-![netflix-background-9](https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg)
+Hasil Review dan Cek list untuk laporan akhir proyek:
 
-
-A `movie recommendation system` is a system whose objective is to predict and compile a list of movies that a user is likely to watch. Recommendation systems have gained much popularity in recent years and have been developed and implemented for various commercial use cases.
-
-For example,
-* Netflix uses recommendation systems to recommend movies or television programs for individual users
-* Amazon uses recommendation systems to predict and display a list of products that the customer is likely to buy
-* Spotify uses music recommendation systems to provide new songs for its listeners  
-
-Recommendation systems have a strong potentional to be used in a variery of other areas as well, however they play a major role in the e-commerce and media businesses, as they can directly impact the revenue and user engagement
-
-There are broadly 3 types of recommendation systems:
-1. `Popularity Based:` This is a basic system in which movies/shows which are rated high will be recommended to all the users in a certain demographic region. Eg: Netflix Top Trending will show top 10 movies trending in that particular country to ever user. 
-
-2. `Content Based:` The general idea is that if a user liked an item with certain properites then he/she are more likely to like similar items. Eg: Movies are recommended based on they Cast, Story, Genre, Plot, Director and many more fields. 
-
-3. `Collaborative Filtering:` This is a more advanced system in which the algorithm tries to find similar users/articles and then recommends items based on this similarity. Eg: If one person likes movies A, B, and C and another person likes movies A, B, and D, it is likely that the first person will buy item D and the other person will buy item C, since they share many similarities with each other
-
-In this [Notebook](https://github.com/Uttkarsh14/Movie-Recommendation-Engine/blob/main/Movie%20Recommendation.ipynb), we'll be focusing on the advanced Collaborative Filtering recommender. Lets get started!
-"# Proyek-Sisrek-Kelompok05" 
+Baseline (algoritma pembanding sudah di tune untuk menghasilkan performa yang paling optimal)
+Untuk semua model: jelaskan parameter yang digunakan dan value dari setiap parameter. Misal: KNN, berapa K yang diujikan (3, 5, 9 etc), untuk model lain learning rate, iteration, berapa kali eksperimen dijalankan untuk mendapatkan performansi rata-rata.
+Metrik evaluasi merepresentasikan performansi model untuk semua data yang ada di test-set (bukan 1 atau sebagian user saja).
+Data telah dibagi sesuai petunjuk proyek train:validation:test 70%:15%:15%
+Untuk content-based filtering, jelaskan pembentukan user profile dan item profile.
+Untuk experimen: jelaskan desain evaluasi, apakah hold-out sampling saja (test, train, val) atau cross validation (k-fold cross validation).
+Model yang diusulkan dipilih dengan justifikasi (kenapa, bagaimana) akan lebih baik dari model baseline. Jelaskan apa saja yang di tune, atau diubah dari model aslinya (data diperkaya, k-fold cross validation, penambahan bias dll).
+Metrik evaluasi: RMSE, MAE, Precision, Recall, MAP.
+Jumlah rekomendasi yang dikembalikan: 5, 10 (Top 5, Top 10).Berarti metrik menjadi Precision@10, Recall@10, MAP@10, Precision@5, Recall@5, MAP@5. Sementara RMSE, MAE tetap untuk semua.
+Hasil:
+Grafik untuk Rating metriks (RMSE, MAE) dibedakan grafiknya dengan Ranking Metriks (Precision, Recall, MAP). Tidak pada satu grafik/tidak pada satu tabel (jika menggunakan tabel).
+Analisis:
+Menampilkan top 5 tempat wisata yang dikembalikan baseline 1, baseline 2, dan proposed model untuk user target (ID dari user akan disampaikan kemudian).
+Perbandingan rekomendasi tempat wisata yang dikembalikan oleh setiap model kepada user tertentu. Mengapa ketiga model memberikan hasil yang berbeda? Menurut Anda
+Kesimpulan dan Saran
+Laporan ditampilkan dalam bentuk slide presentasi.
+Bonus:
+Dapat membuktikan bahwa model tidak overfitting (tunjukkan grafik RMSE untuk validation dan training set).
+Grafik untuk menampilkan hasil menggunakan pattern (tidak hanya warna) untuk memfasilitasi pembaca yang buta warna, pola akan lebih mudah dibandingkan.
